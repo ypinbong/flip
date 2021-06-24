@@ -1,0 +1,131 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  background: #f3f0dd smoke;
+}
+
+body {
+  background: #255027;
+  background: radial-gradient(circle, #255027 0%, #296d2c 0%, #204922 77%);
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: auto;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+  gap: 2rem;
+  max-width: 100vw;
+  max-height: 100vh;
+  height: auto;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.card {
+  width: 16rem;
+  min-width: auto;
+  height: 20rem;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  background: transparent;
+  margin-bottom: 2rem;
+}
+
+.face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.card:active .face {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip_up, .flip_down {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip_up {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: auto;
+  background-color: transparent;
+  color: black;
+}
+
+.flip_down {
+  background: transparent;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.flip_down .card_content {
+  top: -3px;
+  left: -10px;
+  width: 16rem;
+  height: 20rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 6px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 3rem;
+  font-size: 32px;
+  margin: 2rem;
+}
+
+h4 {
+  padding: 0;
+  margin: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+p {
+  color: black;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=style.css.map */
