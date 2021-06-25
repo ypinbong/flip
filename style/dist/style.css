@@ -18,8 +18,11 @@ body {
 }
 
 body {
-  background: #255027;
-  background: radial-gradient(circle, #255027 0%, #296d2c 0%, #204922 77%);
+  background-image: url("/res/table.jpg");
+  background-size: cover;
+  background-position: sticky;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .main {
@@ -134,11 +137,12 @@ h4 {
   margin: 1rem;
   text-align: center;
   font-size: 1.4rem;
-  color: rgba(255, 255, 255, 0.664);
+  color: rgba(255, 255, 255, 0.781);
 }
 
 p {
   color: black;
   font-size: 1.3rem;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

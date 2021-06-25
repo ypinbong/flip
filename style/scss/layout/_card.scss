@@ -1,6 +1,14 @@
 body{
-  background: rgb(37,80,39);
-  background: radial-gradient(circle, rgba(37,80,39,1) 0%, rgb(41, 109, 44) 0%, rgba(32,73,34,1) 77%);
+  background-image: url('/res/table.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: sticky;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  // background: rgb(37,80,39);
+  // background: radial-gradient(circle, rgba(37,80,39,1) 0%, rgb(41, 109, 44) 0%, rgba(32,73,34,1) 77%);
   // background: rgb(74,9,9);
   // background: radial-gradient(circle, rgba(74,9,9,1) 0%, rgba(98,24,24,1) 28%, rgba(119,38,38,1) 53%, rgba(98,24,24,1) 73%, rgba(74,9,9,1) 100%); 
 }
@@ -98,9 +106,10 @@ h4{
   margin:1rem;
   text-align: center;
   font-size:1.4rem;
-  color:rgba(255, 255, 255, 0.664);
+  color:rgba(255, 255, 255, 0.781);
 }
 p{
   color:black;
   font-size: 1.3rem;
+  font-weight:bold;
 }
